@@ -1,0 +1,190 @@
+
+  *{ 
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+  }
+  
+  .top-bar {
+    background-color:#bce9f8 ;
+    left: 6px;
+    height: 65px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+
+  }
+  .logo{
+    position: absolute;
+    left: 60px;
+    transition: left 0.4s ease;
+    text-align: justify;
+  }
+  .logo.show{
+    left: 255px;
+    
+  }
+  .brand-logo{
+    font-size: 30px ;
+    color: rgb(19, 68, 97);
+    font-family:  'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+  /*-------------------------------------------SIDEBAR------------------------------------*/
+/*----------------------------MENU-ICON-----------------------*/
+.menu-icon{
+  position: absolute;
+  height: 45px;
+  top:0px;
+  left: 10px;
+  top: 8px;
+  width: 45px;
+  background:#e3f9ff ;
+  text-align: center;
+  border-radius: 7px;
+  transition: left 0.4s ease;
+}
+.menu-icon i{
+  line-height: 45px;
+  color: rgb(48, 77, 77);
+  font-size: 37px;
+  cursor: pointer;
+}
+.menu-click{
+  left: 205px;
+}
+.menu-click i:before{
+  content:"\f00d"
+}  
+/*--------------------------SIDEBAR----------------------*/
+  .sidebar {
+    position: absolute;
+    height: 100%;
+    background-color: #b6e5f3;  
+    width: 200px;
+    left: -195px;
+    border-right: 0.5px solid rgb(48, 77, 77);
+    transition: left 0.4s ease;
+  }
+  .sidebar.show{
+    left:0px
+  }
+
+        .sidebar .menu{
+          color:rgb(19, 68, 97);
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 65px;
+          background-color: #bce9f8;
+          letter-spacing: 1px;
+          text-align: center;
+        }
+
+          nav ul{
+            height: 100%;
+            width: 100%;
+            background-color: #b6e5f3;  
+            list-style: none;
+          }
+/*-------------------------------------------Borders of Sidebars----------------------------*/
+            nav ul li{
+              line-height:45px;
+              border-bottom: .5px solid rgba(48, 77, 77, 0.1);
+            }
+            nav ul li:last-child{
+              border-bottom: .5px solid rgba(48, 77, 77, 0.5);
+            }
+            nav ul li ul li:last-child{
+              border-bottom: transparent;
+            }
+                      /*--------------------*curser movements and Clicks-------------------*/
+            
+                nav ul li a{
+                  position: relative;
+                  color: rgb(33, 107, 141);
+                  text-decoration: none;
+                  font-size: 18px;
+                  font-weight: 600;
+                  display: block;
+                  padding-left: 40px;
+                  width: 100%;
+                  border-left: 3px solid transparent;
+                }
+
+
+                nav ul li a:hover{
+                  color:rgb(48, 43, 43);
+                  background: #78d8f8;
+                  border-left-color: rgb(48, 43, 43);
+                }
+                nav ul li.active a{
+                  color:rgb(48, 43, 43);
+                  background: #78d8f8;
+                  border-left-color: rgb(48, 43, 43);
+                  
+                }
+
+   /*-------------------------------------*SUBMENU --------------------------------------------*/
+                    nav ul li a i{        /*arrow*/
+                      position: absolute;
+                      right: 10px;
+                      top:50%;
+                      transform: translateY(-50%);
+                      transition: transform 0.4s;
+                    }
+                    nav ul li a .arrow-rotate{
+                      transform: translateY(-50%) rotate(-180deg);
+                    }
+                            /*--------------SUBMENU CLICKS*---------------------*/
+                            nav ul .account-hidden{
+                              position: static;
+                              display: none;
+                            }
+
+                            nav ul ul li{
+                              line-height:35px;
+                              border-bottom: none;
+                            }
+                            nav ul ul li a{
+                              font-size: 17px;
+                              padding-left: 60px;
+                            }
+                            nav ul .active ul li a{
+                              color: rgb(33, 107, 141);
+                              background-color: #b6e5f3;  
+                              border-left-color: transparent;
+                            }
+
+                            nav ul .active ul li a:hover{
+                              color:rgb(48, 43, 43);
+                              background: #78d8f8;
+                              
+                            }
+
+
+
+
+
+    .info{    
+        padding: 20px;
+        padding-top:60px;
+      }
+
+ .heading{
+     text-align: center;
+     color: cadetblue;
+     text-shadow: .5px .5px 1.5px rgb(7, 66, 66);
+     font-size: 30px;
+     font-family:Arial;
+    
+ }
+ 
+ body{
+ background-color: #f7f1f1;
+ }
